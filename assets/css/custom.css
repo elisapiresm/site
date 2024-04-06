@@ -1,0 +1,41 @@
+/* Seletor de linguagem */
+
+.lang-selector {
+  text-align: center;
+}
+
+.lang-selector a {
+  color: black;
+}
+
+@media (min-width: 992px) {
+  .lang-selector {
+    margin-left: 32px;
+  }
+}
+
+@media (max-width: 991px) {
+  .lang-selector {
+    margin-top: 32px
+  }
+}
+
+/* Botão leia mais */
+
+.botao-leia-mais, .botao-saiba-mais {
+  width: 300px;
+  margin: auto;
+  margin-top: 48px;
+}
+
+.botao-contrate .btn span {
+  font-size: 16px;
+  max-width: 200px;
+}
+
+/* Heading */
+
+.subsection-title{
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}

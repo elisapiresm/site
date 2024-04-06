@@ -1,0 +1,10 @@
+{{$lang := ($.Site.Home.AllTranslations)}} 
+{{$len := (len $lang)}}
+<div class = "lang-selector">
+{{ range $index, $element := $lang }} 
+    <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+  {{ if ne (add $index 1) $len }}
+    |
+  {{ end }}
+{{ end }}
+</div>

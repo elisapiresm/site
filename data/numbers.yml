@@ -1,0 +1,18 @@
+numbers:
+  - icon: school
+    description: "Construção de uma escola para **150** crianças"
+  - icon: hand-holding-usd
+    description: "**3** campanhas de financiamento coletivo"
+  - icon: dollar-sign
+    description: "**Mais de R$350 mil** captados"
+  - icon: users
+    description: "**Mais de 1000** doadores"
+  - icon: handshake-angle
+    description: "**Mais de 200** voluntários"
+  - icon: globe-africa
+    description: "**2** programas de imersão"
+  - icon: film
+    description: "**2** documentários com mais de **3 mil** visualizações"
+  - icon: chalkboard-teacher
+    description: "**mais de 2 mil** pessoas em palestras e cursos"
+  

@@ -1,0 +1,44 @@
+{{ with .Site.Data.timeline }}
+  {{ if .enable }}
+    <section class="nossa-hitoria">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title">
+              <h2>
+                Nossa história
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="main-timeline">
+              {{ range .items }}
+              <div class="timeline">
+                <div class="timeline-content">
+                  <div class="circle">
+                    <span class="homebox">
+                      <img src="{{ .image | absURL}}" class="img">
+                    </span>
+                  </div>
+                  <div class="content">
+                    <span class="year">{{ .year }}</span>
+                    <p class="description">
+                    <ul>
+                      {{ range .events }}
+                        <li>{{ . }}</li>
+                      {{ end }}
+                    </ul>
+                    </p>
+                    <div class="icon"><span></span></div>
+                  </div>
+                </div>
+              </div>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+    </section>
+  {{ end }}
+{{ end }}

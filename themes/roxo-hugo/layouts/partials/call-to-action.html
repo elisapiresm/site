@@ -1,0 +1,54 @@
+{{ with .Site.Params.call_to_action }}
+  {{ if .enable }}
+  <section class="site-cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="site-cta-title mb-3">{{ .title }}</h1>
+          <p class = "mb-5">
+            Nosso trabalho só é possível por meio do apoio de pessoas como você
+          </p>
+          <ul class="site-cta-buttons">
+            <li>
+              <a href="{{ .primeiro_botao_url | absURL }}" class="btn btn-secondary btn-sm-rounded">
+                <span class="btn-area">
+                  <span data-text="{{ .primeiro_botao }}">
+                    {{ .primeiro_botao }}
+                  </span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="{{ .segundo_botao_url | absURL }}" class="btn btn-secondary btn-sm-rounded">
+                <span class="btn-area">
+                  <span data-text="{{ .segundo_botao }}">
+                    {{ .segundo_botao }}
+                  </span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="{{ .terceiro_botao_url | absURL }}" class="btn btn-secondary btn-sm-rounded">
+                <span class="btn-area">
+                  <span data-text="{{ .terceiro_botao }}">
+                    {{ .terceiro_botao }}
+                  </span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="{{ .quarto_botao_url | absURL }}" class="btn btn-primary btn-sm-rounded">
+                <span class="btn-area">
+                  <span data-text="{{ .quarto_botao }}">
+                    {{ .quarto_botao }}
+                  </span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+{{ end }}

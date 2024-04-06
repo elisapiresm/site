@@ -1,0 +1,251 @@
+{{ define "main" }}
+
+<section class="site-imersao-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="site-imersao-wrapper">
+          <div class="site-imersao-company">
+            <h1>
+              {{ .Params.heading }}
+            </h1>
+          </div>
+          <div class="site-imersao-description">
+            <p>
+              Texto texto
+            </p>
+            <div class="row">
+              <div class="col-lg-4 text-center">
+                <a class="nav-link btn btn-sm btn-primary btn-sm-rounded" href="#individuos">
+                  <span class="btn-area">
+                    <span data-text="Para indivíduos">
+                      Para indivíduos
+                    </span>
+                  </span>
+                </a>
+              </div>
+              <div class="col-lg-4 text-center">
+                <a class="nav-link btn btn-sm btn-primary btn-sm-rounded" href="#organizacoes">
+                  <span class="btn-area">
+                    <span data-text="Para organizações">
+                      Para organizações
+                    </span>
+                  </span>
+                </a>
+              </div>
+              <div class="col-lg-4 text-center">
+                <a class="nav-link btn btn-sm btn-secondary btn-sm-rounded" href="#contrate">
+                  <span class="btn-area">
+                    <span data-text="Contrate">
+                      Contrate
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="site-imersao-section"  id = "individuos">
+  <div class="container">
+    <div class="section-title">
+      <h2>Para indivíduos</h2>
+    </div>
+    <div class="row mb-5">
+      <div class="col-lg-6">
+        <h4 class = "mb-4">O que é?</h4>
+        {{ range .Params.individuos.oque }}
+        <p class="site-imersao-text">
+          {{ . }}
+        </p>
+        {{ end }}
+      </div>
+      <div class="col-lg-6">
+        <img src="/images/sobre/o-que-fazemos.jpg">
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col-lg-12">
+        <h4 class = "mb-4">Como funciona?</h4>
+        {{ range .Params.individuos.como }}
+        <p class="site-imersao-text">
+          {{ . }}
+        </p>
+        {{ end }}
+      </div>
+      <div class="col-lg-12">
+        <img width = "100%" src="/images/sobre/o-que-fazemos.jpg">
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col-lg-6">
+        <h4 class = "mb-4">Para quem?</h4>
+        {{ range .Params.individuos.quem }}
+        <p class="site-imersao-text">
+          {{ . }}
+        </p>
+        {{ end }}
+      </div>
+      <div class="col-lg-6">
+        <img src="/images/sobre/o-que-fazemos.jpg">
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col-lg-6">
+        <img src="/images/sobre/o-que-fazemos.jpg">
+      </div>
+      <div class="col-lg-6">
+        <h4 class = "mb-4">Objetivos</h4>
+        <ul class = "site-imersao-text">
+          {{ range .Params.individuos.objetivos }}
+        <li>
+          {{ . }}
+        </li>
+        {{ end }}
+        </ul>
+      </div>
+    </div>
+    <div class = "row">
+      <div class="col-lg-12 text-center">
+        <div class = "site-imersao-quadro">
+          <p class="site-imersao-destaque">
+            {{ .Params.individuos.destaque }}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col-lg-12">
+        <h4 class = "mt-4 mb-4">O que você vai conquistar</h4>
+        <ul class = "site-imersao-text">
+          {{ range .Params.individuos.conquistas }}
+        <li>
+          {{ . }}
+        </li>
+        {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="site-imersao-section"  id = "organizacoes">
+  <div class="container">
+    <div class="section-title">
+      <h2>Para organizações</h2>
+    </div>
+    <div class="row mb-5">
+      <div class="col-lg-6">
+        <h4 class = "mt-4  mb-4">O que é</h4>
+        {{ range .Params.empresas.oque }}
+        <p class="site-imersao-text">
+          {{ . }}
+        </p>
+        {{ end }}
+      </div>
+      <div class="col-lg-6">
+        <img src="/images/sobre/o-que-fazemos.jpg">
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col-lg-12">
+        <h4 class = "mt-4 mb-4">Como funciona</h4>
+        {{ range .Params.empresas.como }}
+        <p class="site-imersao-text">
+          {{ . }}
+        </p>
+        {{ end }}
+      </div>
+      <div class="col-lg-12">
+        <img width = "100%" src="/images/sobre/o-que-fazemos.jpg">
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col-lg-12">
+        <h4 class = "mt-4 mb-4">Para quem</h4>
+        {{ range .Params.empresas.quem }}
+        <p class="site-imersao-text">
+          {{ . }}
+        </p>
+        {{ end }}
+      </div>
+    </div>
+    <div class="row mb-5">
+      <div class="col-lg-6">
+        <h4 class = "mb-4">Objetivos</h4>
+        <ul class = "site-imersao-text">
+        {{ range .Params.empresas.objetivos }}
+          <li>{{ .title }}</li>
+          <ul class = "site-imersao-text">
+          {{ range .item }}
+            <li>
+              {{ . }}
+            </li>
+          {{ end }}
+          </ul>
+        {{ end }}
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <img src="/images/sobre/o-que-fazemos.jpg">
+        <img src="/images/sobre/o-que-fazemos.jpg">
+      </div>
+    </div>
+    <div class = "row">
+      <div class="col-lg-12 text-center">
+        <div class = "site-imersao-quadro">
+          <p class="site-imersao-destaque">
+            {{ .Params.empresas.destaque }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{{ with .Site.Data.imersao }}
+  <section class="site-testimonial" id = "contrate">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title">
+            <h2>
+              {{ .title }}
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+      {{ range .item }}
+      <div class="col-xxl-3 col-xl-6">
+        <div class="site-testimonial-item">
+          <div class="site-testimonial-item-header">
+            <div class="person">
+              <h5>{{ .name }}</h5>
+            </div>
+          </div>
+          <div class = "site-testimonial-item-body">
+            <p class="site-testimonial-item-text">
+              {{ .description1 }}
+            </p>
+            <p class="site-testimonial-item-text mt-3">
+              {{ .description2 }}
+            </p>
+          </div>
+          <div class = "mt-4">
+            {{ partial "botao-contrate.html" (dict "url" "/sobre" "color" "primary") }}
+          </div>
+        </div>
+      </div>
+      {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}
+
+{{ end }}

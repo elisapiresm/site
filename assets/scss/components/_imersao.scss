@@ -1,0 +1,102 @@
+.site-imersao {
+  &-header {
+    padding-top: 100px;
+
+    @include mobile {
+      padding-top: 60px;
+      text-align: center;
+    }
+  }
+
+  &-box {
+    &-primary {
+      background: $primary-color;
+    }
+
+    &-secondary {
+      background: $secondary-color;
+    }
+
+    padding: 42px 42px;
+    color: $white;
+
+    @include desktop {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    h4 {
+      color: $white;
+    }
+  }
+
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &-text {
+    font-size: 18px;
+    letter-spacing: 2px;
+
+    li {
+      margin-bottom: 10px;
+    }
+  }
+
+  &-destaque {
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+
+  &-quadro {
+    padding: 64px;
+  }
+
+  &-company {
+    background: $secondary-color;
+    width: 40%;
+    padding: 70px 38px;
+
+    @include desktop {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      color: $white;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 30px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+  }
+
+  &-description {
+    width: 60%;
+    padding-left: 50px;
+
+    @include desktop {
+      width: 100%;
+      padding: 0 38px;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .btn {
+      max-width: 200px;
+    }
+  }
+
+  &-section {
+    padding-top: 80px;
+    .section-title {
+      margin-bottom: 48px;
+    }
+  }
+
+}

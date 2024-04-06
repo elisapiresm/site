@@ -1,0 +1,160 @@
+baseURL: http://example.org/
+defaultContentLanguage: pt
+languages:
+  pt:
+    languageName: pt
+    contentDir: content/pt
+    title: Elisa Martins
+    weight: 1
+    menu:
+      nav:
+      - name: Sobre mim
+        identifier: "sobre"
+        url: sobre
+        weight: 1
+      - name: Projetos
+        identifier: "projetos"
+        weight: 2
+      - name: Escola em Uganda
+        identifier: "escola_uganda"
+        url: escola_uganda
+        parent: "projetos"
+        weight: 1
+      - name: Produções
+        identifier: "producoes"
+        url: producoes
+        weight: 3
+      - name: Currículo
+        identifier: "curriculo"
+        url: curriculo
+        weight: 4
+      - name: Contato
+        identifier: "contato"
+        url: contato
+        weight: 5
+      - name: Me contrate
+        identifier: "contrate"
+        url: contrate
+        weight: 6
+  en:
+    languageName: en
+    contentDir: content/en
+    title: School in Uganda
+    weight: 2
+    menu:
+      nav:
+      - name: About
+        url: about
+        weight: 1
+      - name: Projects
+        url: projetos
+        weight: 2
+      - name: Brazil-Uganda conection
+        url: conexao
+        weight: 3
+      - name: In media
+        url: midia
+        weight: 4
+      - name: Transparency
+        url: transparencia
+        weight: 5
+      - name: Donate now!!!
+        url: doe
+        weight: 6
+theme: roxo-hugo
+summarylength: 25
+params:
+  author: Elisa Martins
+  banner:
+    background_image: images/backgrounds/hero-background.jpg
+    enable: yes
+    heading: We’re a Design Studio That Belies In the Great Ideas
+    primary_button: See Our Works
+    primary_button_url: portfolio
+    secondary_button: Connect with Us
+    secondary_button_url: contact
+    tagline: WE WORK HARD, WE PLAY HARD
+  call_to_action:
+    background_image: images/backgrounds/cta-background.jpg
+    enable: yes
+    primeiro_botao: Seja um parceiro(a)
+    primeiro_botao_url: 
+    segundo_botao: Junte-se a nós
+    segundo_botao_url:
+    terceiro_botao: Compartilhe
+    terceiro_botao_url:
+    quarto_botao: Doe agora
+    quarto_botao_url:
+    title: FAÇA PARTE
+  contactForm:
+    placeholder_about_the_project: About the Project
+    placeholder_email: Email
+    placeholder_first_name: First Name
+    placeholder_last_name: Last Name
+    placeholder_project_type: Project Type
+    projectType:
+      - title: Graphics Design
+        value: gd
+      - title: Web Design
+        value: wd
+    send_message: Send Message
+  dateFormat: 26 FEB 1994
+  description: Roxo Hugo themes | Design Agency Template by StaticMania
+  fabform: https://fabform.io/f/USAg2Jl
+  footer:
+    contactInfo:
+      address: 713 Elmwood St.<br>Prior Lake, MN 55372
+      email: info@roxo.co
+      phone: 409-896-1444
+      title: Contato
+    service:
+      link:
+        - name: Jornada comunitária
+          url: jornada
+        - name: Programa de imersão
+          url: imersao
+        - name: Palestras
+          url: palestras
+        - name: Cursos e consultoria
+          url: cursos
+      title: 'Serviços'
+    sitemap:
+      link:
+        - name: Quem somos
+          url: sobre
+        - name: Resultados
+          url: resultados
+        - name: Transparência
+          url: transparencia
+        - name: Doe agora
+          url: blog
+      title: Sitemap
+    social:
+      link:
+        - icon: instagram
+          url: '#'
+        - icon: youtube
+          url: '#'
+        - icon: linkedin
+          url: '#'
+    media:
+      link:
+        - name: Documentários
+          url: '#'
+        - name: Notícias
+          url: '#'
+        - name: Blog
+          url: '#'
+        - name: Compartilhe
+          url: '#'
+      title: Na mídia
+  googleAnalitycsID: Your ID
+  logo: images/logo.png
+  navAction:
+    name: Get in touch
+    status: yes
+    url: contact
+  portfolio:
+    enable: yes
+    subtitle: Crafting experiences and seeking to make the complex clear & beautiful.
+    title: OUR RECENT WORKS

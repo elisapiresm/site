@@ -1,0 +1,40 @@
+enable: true
+items:
+  - image: images/timeline/cat.jpeg
+    year: 2017
+    events: 
+      - "Iniciamos como o projeto Escola em Uganda"
+      - "Produção do documentário Agali Awamu: Reinventando Ciclos"
+
+  - image: images/timeline/cat.jpeg
+    year: 2018
+    events: 
+      - "Realização do primeiro Programa de Imersão"
+      - 'Realização da campanha de financiamento coletivo "Vamos Construir a escola em Uganda!"'
+      - "Início da construção da escola St. Mary"
+
+  - image: images/timeline/cat.jpeg
+    year: 2019
+    events: 
+      - "Realização do segundo Programa de Imersão"
+      - 'Realização da campanha de financiamento coletivo "Vamos construir os banheiros da escola em Uganda"'
+
+  - image: images/timeline/cat.jpeg
+    year: 2020
+    events: 
+      - "Concretização da construção da escola St. Mary"
+      - "Lançamento do curso Psicologia Comunitária: prática e teoria a partir do projeto Escola em Uganda"
+
+  - image: images/timeline/cat.jpeg
+    year: "2021-2022"
+    events: 
+      - "Formalização e fundação do Instituto Escola em Uganda"
+
+  - image: images/timeline/cat.jpeg
+    year: 2023
+    events: 
+      - 'Lançamento do documentário Agali Awamu: Reinventando Ciclos II'
+
+  
+
+
