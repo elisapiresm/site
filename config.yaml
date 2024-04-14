@@ -15,11 +15,12 @@ languages:
       - name: Projetos
         identifier: "projetos"
         weight: 2
-      - name: Escola em Uganda
-        identifier: "escola_uganda"
-        url: escola_uganda
-        parent: "projetos"
-        weight: 1
+        url: "projetos"
+      # - name: Escola em Uganda
+      #   identifier: "escola_uganda"
+      #   url: escola_uganda
+      #   parent: "projetos"
+      #   weight: 1
       - name: Produções
         identifier: "producoes"
         url: producoes
